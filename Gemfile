@@ -13,6 +13,8 @@ gem "rubocop", "~> 1.21"
 
 gem "faraday"
 
+gem "nokogiri-happymapper"
+
 group :test do
   gem "webmock"
 
