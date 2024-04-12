@@ -1,6 +1,8 @@
+![example workflow](https://github.com/frizus/hexlet-task-ipgeobase/workflows/main.yml/badge.svg)
+
 # Ipgeobase
 
-TODO: Delete this and the text below, and describe your gem
+Задание: создать гем получающий местоположение IP адреса из сервиса с тестами и проверкой покрытия кода тестами
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ipgeobase`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -18,7 +20,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Гем не собран в архив. Всё что можно делать, это запустить тест и надеяться, что, в целом, гем нормально сделан
 
 ## Development
 
