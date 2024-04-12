@@ -1,4 +1,4 @@
-![example workflow](https://github.com/frizus/hexlet-task-ipgeobase/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/frizus/actions/hexlet-task-ipgeobase/workflows/main.yml/badge.svg)
 
 # Ipgeobase
 
