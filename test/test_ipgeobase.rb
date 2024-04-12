@@ -9,12 +9,17 @@ class TestIpgeobase < Minitest::Test
       to_return do |request|
       ip = uri_template.extract(request.uri)["ip"]
       {
-        body: File.read(__dir__ + "/xml/ip-api-body.xml").sub!("%ip%", ip)
+        body: File.read(__dir__ + "/test_ipgeobase_mock.xml").sub!("%ip%", ip)
       }
     end
-    ip_meta = ::Ipgeobase.lookup("8.8.8.8")
+    begin
+      ip_meta = ::Ipgeobase.lookup("8.8.8.8")
+    rescue StandardError => e
+      assert(false, "Выпало исключение")
+    end
 
     refute_nil(ip_meta)
+    assert_equal("success", ip_meta.status)
     assert_equal("US", ip_meta.country_code)
   end
 end
